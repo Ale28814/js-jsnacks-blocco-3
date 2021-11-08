@@ -1,4 +1,4 @@
-//1-Creare un oggetto di dati di un basketball player
+//1- Creare un oggetto di dati di un basketball player
 const basketBallPlayer = [
     {
         gamerCode: '',
@@ -11,7 +11,7 @@ const basketBallPlayer = [
     },
 ];
 
-//2-Creare funzioni delle statistiche di gioco
+//2- Creare funzioni delle statistiche di gioco
 //2.1 creare codice giocatore
 const codeNumber = 6;
 let gamercode = [];
@@ -36,3 +36,8 @@ function success() {
     return percentuale;
 };
 console.log(success());
+
+//3- stampare nome, cognome, età e codice giocatore
+const {name, lastName, age, gamerCode} = basketBallPlayer;
+const playerId = ({name, lastName, age, gamerCode}) => `${name} ${lastName} ${age} ${gamerCode}`;
+console.log(playerId(basketBallPlayer));
