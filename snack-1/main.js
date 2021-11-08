@@ -24,3 +24,15 @@ for ( let i = 0; i < codeNumber; i++) {
 console.log(gamercode);
 
 //2.2 creare media punti per partita
+function mediaPoint() {
+    num = Math.round(Math.random() * 51);
+    return num;
+};
+console.log(mediaPoint());
+
+//2.3 creare percentuale successo ai tiri da 3
+function success() {
+    percentuale = Math.round(Math.random() * 101);
+    return percentuale;
+};
+console.log(success());
